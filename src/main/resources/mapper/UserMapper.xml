@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.test.mapper.UserMapper">
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >-->
+<!--<mapper namespace="com.example.test.mapper.UserMapper">-->
 
-    <select id="getInfo" parameterType="String" resultType="com.example.test.bean.UserBean">
-        SELECT * FROM user WHERE name = #{name} AND password = #{password}
-    </select>
-    <!-- 登录关键查询 -->
-<!--    <select id="loadUserByUsername" resultType="com.example.test.bean.UserBean">-->
-<!--        SELECT <include refid="Base_Column_List"></include> FROM user WHERE name=#{username}-->
+<!--    <select id="getInfo" parameterType="String" resultType="com.example.test.bean.UserBean">-->
+<!--        SELECT * FROM user WHERE name = #{name} AND password = #{password}-->
 <!--    </select>-->
+<!--    &lt;!&ndash; 登录关键查询 &ndash;&gt;-->
+<!--&lt;!&ndash;    <select id="loadUserByUsername" resultType="com.example.test.bean.UserBean">&ndash;&gt;-->
+<!--&lt;!&ndash;        SELECT <include refid="Base_Column_List"></include> FROM user WHERE name=#{username}&ndash;&gt;-->
+<!--&lt;!&ndash;    </select>&ndash;&gt;-->
 
-</mapper>
+<!--</mapper>-->

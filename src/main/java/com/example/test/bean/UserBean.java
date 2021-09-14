@@ -1,8 +1,18 @@
 package com.example.test.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.*;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="user")
 public class UserBean {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(nullable = false,unique = true)
     private String name;
+    @Column
     private String password;
 
     public int getId() {

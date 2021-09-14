@@ -5,5 +5,5 @@ import com.example.test.bean.UserBean;
 public interface UserService {
 
     UserBean loginIn(String name,String password);
-
+    UserBean findUserById(String id);
 }
