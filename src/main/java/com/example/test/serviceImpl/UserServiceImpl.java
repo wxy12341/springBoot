@@ -6,6 +6,8 @@ import com.example.test.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -21,5 +23,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserBean findUserById(String id) {
         return userMapper.findUserById(id);
+    }
+
+    @Override
+    public List<UserBean> selectUserList() {
+        return userMapper.selectUserList();
     }
 }
