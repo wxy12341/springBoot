@@ -29,4 +29,14 @@ public class UserServiceImpl implements UserService {
     public List<UserBean> selectUserList() {
         return userMapper.selectUserList();
     }
+
+    @Override
+    public List<UserBean> selectAll() {
+        return userMapper.selectAll();
+    }
+
+    public int selectCount(){
+        UserBean userbean = new UserBean();
+        return userMapper.selectCount(userbean);
+    }
 }

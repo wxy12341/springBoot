@@ -17,6 +17,13 @@ spring:
 server:
    port: 8088
 
+#配置分页插件pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
 #mybatis:
 #    mapper-locations: classpath:mapper/*.xml  #\u914D\u7F6E\u6620\u5C04\u6587\u4EF6
 #    type-aliases-package: com.example.test.bean #\u914D\u7F6E\u5B9E\u4F53\u7C7B

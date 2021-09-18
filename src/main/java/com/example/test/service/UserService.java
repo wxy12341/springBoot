@@ -9,4 +9,5 @@ public interface UserService {
     UserBean loginIn(String name,String password);
     UserBean findUserById(String id);
     List<UserBean> selectUserList();
+    List<UserBean> selectAll();
 }
